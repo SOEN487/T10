@@ -83,9 +83,17 @@ public class CustomerRestForm {
     @DELETE
     @Path("{id}")
     public Response deleteCustomer(@PathParam("id") int id) {
-           customers = customers.stream().filter(customer -> customer.getId() != id)
+        Customer theCustomer = customers.stream().filter(customer1 -> customer1.getId() == id)
+                .findFirst()
+                .orElse(null);
+        if (theCustomer != null) {
+            customers = customers.stream().filter(customer -> customer.getId() != id)
                     .collect(Collectors.toCollection(ArrayList::new));
             return Response.status(Response.Status.OK).entity("Succesfully deleted customer!").build();
+        } else {
+            return Response.status(Response.Status.OK).entity("Customer does not exist!").build();
+        }
+
 
     }
 }
