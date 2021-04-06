@@ -94,30 +94,4 @@ public class UserRest {
             return "User does not exist!";
         }
     }
-
-    /**
-     * Used to validate token
-     * @param token of user
-     * @return boolean of whether token is correct or not
-     */
-//    @POST
-//    @Path("/auth")
-//    public Response validateToken(@HeaderParam("x-api-key") String token) {
-//        if(tokenUsername.containsKey(token)){
-//            Date timeNow = new Date();
-//            long diff = timeNow.getTime() - tokenExpiration.get(token).getTime();
-//            long tokenDuration = TimeUnit.MILLISECONDS.toMinutes(diff);
-//            System.out.println("Duration: " + tokenDuration);
-//            if(tokenDuration > 30){
-//                tokenUsername.remove(token);
-//                tokenExpiration.remove(token);
-//                //return Response.status(Response.Status.UNAUTHORIZED).entity("false").build();
-//            }
-//            else{
-//                return Response.status(Response.Status.OK).entity("true").build();
-//            }
-//        }
-//      return Response.status(Response.Status.UNAUTHORIZED).entity("false").build();
-//
-//    }
 }
