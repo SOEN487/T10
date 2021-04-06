@@ -1,6 +1,6 @@
-# T08 - SOEN 487
+# T10 - SOEN 487
 
-This is the template provided to start the web server for Tutorial 8.
+This is the template provided to start the web server for Tutorial 10.
 You should download this to follow along when watching the tutorial.
 
 The finished example can be found on the finished branch of this repository.
@@ -27,6 +27,16 @@ click and click on "Add as Maven Project" to load up the project and start worki
 * Right click associated class and choose Run main()
 
 ![Screenshot](img/fig1.png)
+
+## Postman Instructions ##
+
+To use the postman collection, please import the Tutorial10.postman_collection.json file into postman.
+This will help you set up all the API endpoints included in this tutorial.
+
+You will also need to set up a new environment, with the following variables included,
+so that you will be able to store some general variable for the requests.
+
+![Screenshot](img/environment_variables.png)
 
 ## Maven Instructions ##
 
