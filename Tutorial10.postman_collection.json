@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "95489e30-d016-457b-ac6c-8a5064dcf70f",
+		"_postman_id": "874936d9-f85d-4912-a5e2-bf2734ebc4a1",
 		"name": "Tutorial10",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -144,7 +144,13 @@
 					"type": "noauth"
 				},
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization-Token",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "urlencoded",
 					"urlencoded": [
@@ -176,7 +182,13 @@
 			"name": "Get Customers",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization-Token",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "{{app_url}}/customerform",
 					"host": [
@@ -207,7 +219,13 @@
 			],
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization-Token",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "urlencoded",
 					"urlencoded": [
@@ -254,7 +272,13 @@
 			],
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization-Token",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "{{app_url}}/customerform/{{customer_id}}",
 					"host": [
